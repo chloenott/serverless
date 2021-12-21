@@ -8,7 +8,7 @@ Expected response: An integer representing the final count value. I notice somet
 
 ## Description
 
-This is a serverless function assignment that assumes vercel is being used to run them. If ran locally, see vercel cli documentation. (Tldr: poetry init, vercel dev).
+This is a serverless function assignment that assumes vercel is being used to run them. If ran locally, see vercel cli documentation. (Tldr: poetry install, vercel dev).
 
 The api/counter_parent route simply increments a counter by 1 in a loop for the provided duration_seconds, and returns the count value at the end. The purpose was to compare the speed on my local environment versus vercel. It seems vercel runs the count function about 5x slower (3.7E6 counts/s vs 0.7E6 counts/s,). However...
 
